@@ -1,6 +1,7 @@
 var express = require('express');
 var request = require('request'); // "Request" library
 var cors = require('cors');
+var fs = require('fs')
 const next = require('next')
 const dev = process.env.NODE_DEV !== 'production' //true false
 const nextApp = next({ dev })
@@ -9,6 +10,10 @@ var querystring = require('querystring');
 var cookieParser = require('cookie-parser');
 const SocketManager = require('./SocketManager')
 
+var server = require('http').createServer({   
+  key: fs.readFileSync('./key.pem'),
+  cert: fs.readFileSync('./cert.pem'),
+  passphrase: ''},app);
 
 
 
@@ -162,7 +167,7 @@ var generateRandomString = function(length) {
     })
 
 
-    app.listen(3000, ()=> {
+    server.listen(3000, ()=> {
         console.log("Connected to Port: " + 3000)
     
     })
