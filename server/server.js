@@ -23,7 +23,6 @@ var client_id = 'f73c63fa448c49b08855af181fce57a6'; // Your client id
 var client_secret = '785996124b04465497f471f8cfd2f53b'; // Your secret
 var redirect_uri = 'http://localhost:3000/callback'; // Your redirect uri
 var user = null
-
 /**
  * Generates a random string containing numbers and letters
  * @param  {number} length The length of the string
@@ -119,15 +118,13 @@ var generateRandomString = function(length) {
                 headers: { 'Authorization': 'Bearer ' + access_token },
                 json: true
               };
-
-              
+              req.session.user_token = body.access_token
+              user = body.access_token
+              req.session.save()
       
               // use the access token to access the Spotify Web API
               request.get(options, function(error, response, body) {
                 console.log("test3")
-                req.session.user = body 
-                user = body
-                console.log(req.session)
                 res.redirect('/')   
                
               });
@@ -175,13 +172,15 @@ var generateRandomString = function(length) {
       
 
     app.get('/getUser', (req,res)=>{
-      if(!user){
+      console.log("Sessiion Data")
+      console.log(req.session)
+      if(!req.session.user_token){
         console.log(req.session.test + req.session.eggs)
-        res.send({user : null})
+        res.send({ user : null})
       }
       else{
 
-        res.send(user)
+        res.send({user : req.session.user})
       }
 
     })

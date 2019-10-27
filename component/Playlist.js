@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Song from '../component/Song';
+import Song from './Song';
 
 
 
@@ -41,7 +41,7 @@ export default class Playlist extends Component {
         return(
             <div style={styles.playlist}>
                 {songlist}
-                <a href='/search' style={styles.link}><img src={img} alt='plus' style={styles.link}/></a>
+                <a href='/search' style={styles.link}><img src="" alt='plus' style={styles.link}/></a>
                 <button onClick={this.props.addSong}> ADD SONG</button>
             </div>
 
