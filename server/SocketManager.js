@@ -33,11 +33,12 @@ module.exports = function(socket){
             song.upvotes = 1
             song.downvotes = 0
             song.totalvotes = song.upvotes - song.downvotes
-            songs = addSong(songs, song)  
-            socket.emit(SONG_RECEIVED, song)   
+            songs = addSong(songs, song)
+            socket.broadcoast(SONG_RECEIVED, song)
 
         }
     })
+
 
     socket.on(SONG_RECEIVED, (song)=>{
         if(!top){
@@ -45,25 +46,28 @@ module.exports = function(socket){
         }
     })
 
+    // if the song is voted up, add one to its votes.
     socket.on(VOTEUP, (song)=>{
-        
-
+        if (!song.upvotes){
+            song.upvotes = 1;
+            else {
+                song.upvotes += 1
+            }
+        }
     })
 
-    socket.on(VOTEUP, (song)=>{
-
-
-    })
-
-
-    //User disconencts
-
+        //User disconencts
+      socket.on('USER_DISCONNECTED', function(){
+          console.log('user disconnected');
+        });
 
 
     //User logouts
+      socket.on('LOGOUT', ()=> {
+          console.log("user logged out");
+      });
 
 }
-
 
 function addSong(songs, song){
     let newList = Object.assign({}, songs)
