@@ -1,46 +1,56 @@
 import React from 'react';
-import Link from 'next/link';
+import Login from '../component/Login'
+import Room from '../component/Room'
 import Head from 'next/head';
-
-
+import fetch from 'isomorphic-unfetch'
+import { VERIFY_USER } from '../Events'
+import io from 'socket.io-client'
 
 export default class Index extends React.Component {
+
   constructor(props){
+
     super(props)
     this.state = {
-      user: null
+      inRoom : false
     }
-
   }
 
+  static async getInitialProps(ctx) {
+    const res = await fetch('http://localhost:3000/getUser', {
+      headers: {
+        cookie: ctx.req.headers.cookie,
+      },
+    });
+    const user = await res.json()
+    return { user : user}
+  }
+
+  enter(evt){
+    evt.preventDefault()
+    const { socket } = this.props
+    io.emit(VERIFY_USER, this.props.user)
+    inRoom = true
+  }
   
 
   render(){
+
+    const Button = <div onClick={this.enter}>
+      Enter Room
+    </div>
     return (
-      <div>
+      <>
+      { this.state.inRoom ? <Room/> : (<div>
         <Head>
         <title>Example of the Authorization Code flow with Spotify</title>
         <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"/>
       </Head>
+      {this.props.user ? Button : <Login/> }
+      </div>)
+      }
+      </>
 
-      <h1>This is an example of the Authorization Code flow</h1>
-      <Link href="/login">
-      <div  className="btn btn-primary">Log in with Spotify</div>
-      </Link>
-      <style jsx>{`
-          #login, #loggedin {
-            display: none;
-          }
-          .text-overflow {
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            width: 500px;
-          }
-          `}
-      </style>
-    </div>
-      
     );
   }
 }

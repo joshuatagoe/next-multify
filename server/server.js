@@ -9,21 +9,20 @@ const handle = nextApp.getRequestHandler()
 var querystring = require('querystring');
 var cookieParser = require('cookie-parser');
 const SocketManager = require('./SocketManager')
-
-var server = require('http').createServer({   
-  key: fs.readFileSync('./key.pem'),
-  cert: fs.readFileSync('./cert.pem'),
-  passphrase: ''},app);
-
+var app = express();
+var http = require('http')
+var server = http.createServer(app);
+var session = require('express-session')
+const io = require('socket-io')(server)
 
 
 
 
 
 var client_id = 'f73c63fa448c49b08855af181fce57a6'; // Your client id
-var client_secret = '785996124b04465497f471f8cfd2f53'; // Your secret
-var redirect_uri = 'https://localhost:3000/callback'; // Your redirect uri
-
+var client_secret = '785996124b04465497f471f8cfd2f53b'; // Your secret
+var redirect_uri = 'http://localhost:3000/callback'; // Your redirect uri
+var user = null
 
 /**
  * Generates a random string containing numbers and letters
@@ -45,14 +44,17 @@ var generateRandomString = function(length) {
 
  
   nextApp.prepare().then(()=>{
-
-    var app = express();
-
     
 
     app.use(express.static(__dirname + '/public'))
     .use(cors())
-    .use(cookieParser());
+    .use(cookieParser())
+    .use(session({secret: 'ssshhhhh',
+      resave: true,
+        saveUninitialized: false
+      }));
+
+
 
 
     app.get('/login', function(req, res) {
@@ -76,6 +78,9 @@ var generateRandomString = function(length) {
 
 
       app.get('/callback', function(req, res) {
+        req.session.test = "boi"
+        req.session.eggs = 1;
+        console.log(req.session)
 
         // your application requests refresh and access tokens
         // after checking the state parameter
@@ -109,24 +114,30 @@ var generateRandomString = function(length) {
       
               var access_token = body.access_token,
                   refresh_token = body.refresh_token;
-      
               var options = {
                 url: 'https://api.spotify.com/v1/me',
                 headers: { 'Authorization': 'Bearer ' + access_token },
                 json: true
               };
+
+              
       
               // use the access token to access the Spotify Web API
               request.get(options, function(error, response, body) {
-                console.log(body);
+                console.log("test3")
+                req.session.user = body 
+                user = body
+                console.log(req.session)
+                res.redirect('/')   
+               
               });
       
               // we can also pass the token to the browser to make requests from there
-              res.redirect('/#' +
+             /* res.redirect('/#' +
                 querystring.stringify({
                   access_token: access_token,
                   refresh_token: refresh_token
-                }));
+                }));*/
             } else {
               res.redirect('/#' +
                 querystring.stringify({
@@ -139,6 +150,7 @@ var generateRandomString = function(length) {
       
       app.get('/refresh_token', function(req, res) {
       
+
         // requesting access token from refresh token
         var refresh_token = req.query.refresh_token;
         var authOptions = {
@@ -161,6 +173,18 @@ var generateRandomString = function(length) {
         });
       });
       
+
+    app.get('/getUser', (req,res)=>{
+      if(!user){
+        console.log(req.session.test + req.session.eggs)
+        res.send({user : null})
+      }
+      else{
+
+        res.send(user)
+      }
+
+    })
 
     app.get('*', (req,res) => {
         return handle(req,res) // for all the react stuff

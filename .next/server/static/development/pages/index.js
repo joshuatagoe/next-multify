@@ -93,6 +93,47 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
+/***/ "./component/Login.js":
+/*!****************************!*\
+  !*** ./component/Login.js ***!
+  \****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-jsx/style */ "styled-jsx/style");
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
+
+
+class Login extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
+  render() {
+    return __jsx("div", {
+      className: "jsx-3854067381"
+    }, __jsx("h1", {
+      className: "jsx-3854067381"
+    }, "This is an example of the Authorization Code flow"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+      href: "/login"
+    }, __jsx("div", {
+      className: "jsx-3854067381" + " " + "btn btn-primary"
+    }, "Log in with Spotify")), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
+      id: "3854067381"
+    }, "#login.jsx-3854067381,#loggedin.jsx-3854067381{display:none;}.text-overflow.jsx-3854067381{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:500px;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xcam9zaHVcXERvY3VtZW50c1xcR2l0SHViXFxuZXh0LW11bHRpZnlcXGNvbXBvbmVudFxcTG9naW4uanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBWW9CLEFBRzRCLEFBR0csYUFGbEIsR0FHeUIsdUJBQ0osbUJBQ1AsWUFDZCIsImZpbGUiOiJDOlxcVXNlcnNcXGpvc2h1XFxEb2N1bWVudHNcXEdpdEh1YlxcbmV4dC1tdWx0aWZ5XFxjb21wb25lbnRcXExvZ2luLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0LCB7IENvbXBvbmVudCB9IGZyb20gJ3JlYWN0JztcclxuaW1wb3J0IExpbmsgZnJvbSAnbmV4dC9saW5rJ1xyXG5cclxuY2xhc3MgTG9naW4gZXh0ZW5kcyBDb21wb25lbnR7XHJcblxyXG4gICAgcmVuZGVyKCl7XHJcblxyXG4gICAgICAgcmV0dXJuIDxkaXY+XHJcbiAgICAgICAgPGgxPlRoaXMgaXMgYW4gZXhhbXBsZSBvZiB0aGUgQXV0aG9yaXphdGlvbiBDb2RlIGZsb3c8L2gxPlxyXG4gICAgICAgIDxMaW5rIGhyZWY9XCIvbG9naW5cIj5cclxuICAgICAgICA8ZGl2ICBjbGFzc05hbWU9XCJidG4gYnRuLXByaW1hcnlcIj5Mb2cgaW4gd2l0aCBTcG90aWZ5PC9kaXY+XHJcbiAgICAgICAgPC9MaW5rPlxyXG4gICAgICAgIDxzdHlsZSBqc3g+e2BcclxuICAgICAgICAgICAgI2xvZ2luLCAjbG9nZ2VkaW4ge1xyXG4gICAgICAgICAgICAgIGRpc3BsYXk6IG5vbmU7XHJcbiAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgLnRleHQtb3ZlcmZsb3cge1xyXG4gICAgICAgICAgICAgIG92ZXJmbG93OiBoaWRkZW47XHJcbiAgICAgICAgICAgICAgdGV4dC1vdmVyZmxvdzogZWxsaXBzaXM7XHJcbiAgICAgICAgICAgICAgd2hpdGUtc3BhY2U6IG5vd3JhcDtcclxuICAgICAgICAgICAgICB3aWR0aDogNTAwcHg7XHJcbiAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgYH1cclxuICAgICAgICA8L3N0eWxlPlxyXG4gICAgICA8L2Rpdj5cclxuXHJcbiAgICB9XHJcblxyXG4gICAgXHJcbn1cclxuXHJcbmV4cG9ydCBkZWZhdWx0IExvZ2luIl19 */\n/*@ sourceURL=C:\\Users\\joshu\\Documents\\GitHub\\next-multify\\component\\Login.js */"));
+  }
+
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (Login);
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/map.js":
 /*!************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/core-js/map.js ***!
@@ -1791,45 +1832,46 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Index; });
-/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-jsx/style */ "styled-jsx/style");
-/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/head */ "next/head");
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_3__);
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _component_Login__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../component/Login */ "./component/Login.js");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/head */ "next/head");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! isomorphic-unfetch */ "isomorphic-unfetch");
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3__);
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-class Index extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      user: null
+
+class Index extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
+  static async getInitialProps(ctx) {
+    const res = await isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3___default()('http://localhost:3000/getUser', {
+      headers: {
+        cookie: ctx.req.headers.cookie
+      }
+    });
+    const user = await res.json();
+    return {
+      user: user
     };
   }
 
+  enter(evt) {
+    evt.preventDefault();
+  }
+
   render() {
-    return __jsx("div", {
-      className: "jsx-2065220615"
-    }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_3___default.a, null, __jsx("title", {
-      className: "jsx-2065220615"
-    }, "Example of the Authorization Code flow with Spotify"), __jsx("link", {
+    console.log(this.props);
+
+    const Button = __jsx("div", {
+      onClick: this.enter
+    }, "Enter Room");
+
+    return __jsx("div", null, __jsx(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, null, __jsx("title", null, "Example of the Authorization Code flow with Spotify"), __jsx("link", {
       rel: "stylesheet",
-      href: "//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css",
-      className: "jsx-2065220615"
-    })), __jsx("h1", {
-      className: "jsx-2065220615"
-    }, "This is an example of the Authorization Code flow"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-      href: "/login"
-    }, __jsx("div", {
-      className: "jsx-2065220615" + " " + "btn btn-primary"
-    }, "Log in with Spotify")), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
-      id: "2065220615"
-    }, "#login.jsx-2065220615,#loggedin.jsx-2065220615{display:none;}.text-overflow.jsx-2065220615{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:500px;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xcam9zaHVcXERvY3VtZW50c1xcR2l0SHViXFxuZXh0LW11bHRpZnlcXHBhZ2VzXFxpbmRleC5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUE2QmtCLEFBRzBCLEFBR0csYUFGbEIsR0FHeUIsdUJBQ0osbUJBQ1AsWUFDZCIsImZpbGUiOiJDOlxcVXNlcnNcXGpvc2h1XFxEb2N1bWVudHNcXEdpdEh1YlxcbmV4dC1tdWx0aWZ5XFxwYWdlc1xcaW5kZXguanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUmVhY3QgZnJvbSAncmVhY3QnO1xyXG5pbXBvcnQgTGluayBmcm9tICduZXh0L2xpbmsnO1xyXG5pbXBvcnQgSGVhZCBmcm9tICduZXh0L2hlYWQnO1xyXG5cclxuXHJcblxyXG5leHBvcnQgZGVmYXVsdCBjbGFzcyBJbmRleCBleHRlbmRzIFJlYWN0LkNvbXBvbmVudCB7XHJcbiAgY29uc3RydWN0b3IocHJvcHMpe1xyXG4gICAgc3VwZXIocHJvcHMpXHJcbiAgICB0aGlzLnN0YXRlID0ge1xyXG4gICAgICB1c2VyOiBudWxsXHJcbiAgICB9XHJcblxyXG4gIH1cclxuXHJcbiAgXHJcblxyXG4gIHJlbmRlcigpe1xyXG4gICAgcmV0dXJuIChcclxuICAgICAgPGRpdj5cclxuICAgICAgICA8SGVhZD5cclxuICAgICAgICA8dGl0bGU+RXhhbXBsZSBvZiB0aGUgQXV0aG9yaXphdGlvbiBDb2RlIGZsb3cgd2l0aCBTcG90aWZ5PC90aXRsZT5cclxuICAgICAgICA8bGluayByZWw9XCJzdHlsZXNoZWV0XCIgaHJlZj1cIi8vbmV0ZG5hLmJvb3RzdHJhcGNkbi5jb20vYm9vdHN0cmFwLzMuMS4xL2Nzcy9ib290c3RyYXAubWluLmNzc1wiLz5cclxuICAgICAgPC9IZWFkPlxyXG5cclxuICAgICAgPGgxPlRoaXMgaXMgYW4gZXhhbXBsZSBvZiB0aGUgQXV0aG9yaXphdGlvbiBDb2RlIGZsb3c8L2gxPlxyXG4gICAgICA8TGluayBocmVmPVwiL2xvZ2luXCI+XHJcbiAgICAgIDxkaXYgIGNsYXNzTmFtZT1cImJ0biBidG4tcHJpbWFyeVwiPkxvZyBpbiB3aXRoIFNwb3RpZnk8L2Rpdj5cclxuICAgICAgPC9MaW5rPlxyXG4gICAgICA8c3R5bGUganN4PntgXHJcbiAgICAgICAgICAjbG9naW4sICNsb2dnZWRpbiB7XHJcbiAgICAgICAgICAgIGRpc3BsYXk6IG5vbmU7XHJcbiAgICAgICAgICB9XHJcbiAgICAgICAgICAudGV4dC1vdmVyZmxvdyB7XHJcbiAgICAgICAgICAgIG92ZXJmbG93OiBoaWRkZW47XHJcbiAgICAgICAgICAgIHRleHQtb3ZlcmZsb3c6IGVsbGlwc2lzO1xyXG4gICAgICAgICAgICB3aGl0ZS1zcGFjZTogbm93cmFwO1xyXG4gICAgICAgICAgICB3aWR0aDogNTAwcHg7XHJcbiAgICAgICAgICB9XHJcbiAgICAgICAgICBgfVxyXG4gICAgICA8L3N0eWxlPlxyXG4gICAgPC9kaXY+XHJcbiAgICAgIFxyXG4gICAgKTtcclxuICB9XHJcbn1cclxuIl19 */\n/*@ sourceURL=C:\\Users\\joshu\\Documents\\GitHub\\next-multify\\pages\\index.js */"));
+      href: "//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"
+    })), this.props.user ? Button : __jsx(_component_Login__WEBPACK_IMPORTED_MODULE_1__["default"], null));
   }
 
 }
@@ -1922,6 +1964,17 @@ module.exports = require("core-js/library/fn/object/keys");
 /***/ (function(module, exports) {
 
 module.exports = require("core-js/library/fn/promise");
+
+/***/ }),
+
+/***/ "isomorphic-unfetch":
+/*!*************************************!*\
+  !*** external "isomorphic-unfetch" ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("isomorphic-unfetch");
 
 /***/ }),
 
