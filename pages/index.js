@@ -21,7 +21,9 @@ export default class Index extends React.Component {
         cookie: ctx.req.headers.cookie,
       },
     });
-    const user = await res.json()
+ 
+    const user = await res.text()
+    console.log(res.text())
     return { user : user}
   }
 
@@ -30,6 +32,7 @@ export default class Index extends React.Component {
     const { socket } = this.props
     io.emit(VERIFY_USER, this.props.user)
     inRoom = true
+    
   }
   
 

@@ -148,7 +148,7 @@ class Login extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
       className: "jsx-3854067381" + " " + "btn btn-primary"
     }, "Log in with Spotify")), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
       id: "3854067381"
-    }, "#login.jsx-3854067381,#loggedin.jsx-3854067381{display:none;}.text-overflow.jsx-3854067381{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:500px;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xcam9zaHVcXERvY3VtZW50c1xcR2l0SHViXFxuZXh0LW11bHRpZnlcXGNvbXBvbmVudFxcTG9naW4uanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBWW9CLEFBRzRCLEFBR0csYUFGbEIsR0FHeUIsdUJBQ0osbUJBQ1AsWUFDZCIsImZpbGUiOiJDOlxcVXNlcnNcXGpvc2h1XFxEb2N1bWVudHNcXEdpdEh1YlxcbmV4dC1tdWx0aWZ5XFxjb21wb25lbnRcXExvZ2luLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0LCB7IENvbXBvbmVudCB9IGZyb20gJ3JlYWN0JztcclxuaW1wb3J0IExpbmsgZnJvbSAnbmV4dC9saW5rJ1xyXG5cclxuY2xhc3MgTG9naW4gZXh0ZW5kcyBDb21wb25lbnR7XHJcblxyXG4gICAgcmVuZGVyKCl7XHJcblxyXG4gICAgICAgcmV0dXJuIDxkaXY+XHJcbiAgICAgICAgPGgxPlRoaXMgaXMgYW4gZXhhbXBsZSBvZiB0aGUgQXV0aG9yaXphdGlvbiBDb2RlIGZsb3c8L2gxPlxyXG4gICAgICAgIDxMaW5rIGhyZWY9XCIvbG9naW5cIj5cclxuICAgICAgICA8ZGl2ICBjbGFzc05hbWU9XCJidG4gYnRuLXByaW1hcnlcIj5Mb2cgaW4gd2l0aCBTcG90aWZ5PC9kaXY+XHJcbiAgICAgICAgPC9MaW5rPlxyXG4gICAgICAgIDxzdHlsZSBqc3g+e2BcclxuICAgICAgICAgICAgI2xvZ2luLCAjbG9nZ2VkaW4ge1xyXG4gICAgICAgICAgICAgIGRpc3BsYXk6IG5vbmU7XHJcbiAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgLnRleHQtb3ZlcmZsb3cge1xyXG4gICAgICAgICAgICAgIG92ZXJmbG93OiBoaWRkZW47XHJcbiAgICAgICAgICAgICAgdGV4dC1vdmVyZmxvdzogZWxsaXBzaXM7XHJcbiAgICAgICAgICAgICAgd2hpdGUtc3BhY2U6IG5vd3JhcDtcclxuICAgICAgICAgICAgICB3aWR0aDogNTAwcHg7XHJcbiAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgYH1cclxuICAgICAgICA8L3N0eWxlPlxyXG4gICAgICA8L2Rpdj5cclxuXHJcbiAgICB9XHJcblxyXG4gICAgXHJcbn1cclxuXHJcbmV4cG9ydCBkZWZhdWx0IExvZ2luIl19 */\n/*@ sourceURL=C:\\Users\\joshu\\Documents\\GitHub\\next-multify\\component\\Login.js */"));
+    }, "#login.jsx-3854067381,#loggedin.jsx-3854067381{display:none;}.text-overflow.jsx-3854067381{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:500px;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9hbm5pZXh1L25leHQtbXVsdGlmeS9jb21wb25lbnQvTG9naW4uanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBWW9CLEFBRzRCLEFBR0csYUFGbEIsR0FHeUIsdUJBQ0osbUJBQ1AsWUFDZCIsImZpbGUiOiIvVXNlcnMvYW5uaWV4dS9uZXh0LW11bHRpZnkvY29tcG9uZW50L0xvZ2luLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0LCB7IENvbXBvbmVudCB9IGZyb20gJ3JlYWN0JztcbmltcG9ydCBMaW5rIGZyb20gJ25leHQvbGluaydcblxuY2xhc3MgTG9naW4gZXh0ZW5kcyBDb21wb25lbnR7XG5cbiAgICByZW5kZXIoKXtcblxuICAgICAgIHJldHVybiA8ZGl2PlxuICAgICAgICA8aDE+VGhpcyBpcyBhbiBleGFtcGxlIG9mIHRoZSBBdXRob3JpemF0aW9uIENvZGUgZmxvdzwvaDE+XG4gICAgICAgIDxMaW5rIGhyZWY9XCIvbG9naW5cIj5cbiAgICAgICAgPGRpdiAgY2xhc3NOYW1lPVwiYnRuIGJ0bi1wcmltYXJ5XCI+TG9nIGluIHdpdGggU3BvdGlmeTwvZGl2PlxuICAgICAgICA8L0xpbms+XG4gICAgICAgIDxzdHlsZSBqc3g+e2BcbiAgICAgICAgICAgICNsb2dpbiwgI2xvZ2dlZGluIHtcbiAgICAgICAgICAgICAgZGlzcGxheTogbm9uZTtcbiAgICAgICAgICAgIH1cbiAgICAgICAgICAgIC50ZXh0LW92ZXJmbG93IHtcbiAgICAgICAgICAgICAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgICAgICAgICAgICAgdGV4dC1vdmVyZmxvdzogZWxsaXBzaXM7XG4gICAgICAgICAgICAgIHdoaXRlLXNwYWNlOiBub3dyYXA7XG4gICAgICAgICAgICAgIHdpZHRoOiA1MDBweDtcbiAgICAgICAgICAgIH1cbiAgICAgICAgICAgIGB9XG4gICAgICAgIDwvc3R5bGU+XG4gICAgICA8L2Rpdj5cblxuICAgIH1cblxuICAgIFxufVxuXG5leHBvcnQgZGVmYXVsdCBMb2dpbiJdfQ== */\n/*@ sourceURL=/Users/anniexu/next-multify/component/Login.js */"));
   }
 
 }
@@ -1887,7 +1887,8 @@ class Index extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
         cookie: ctx.req.headers.cookie
       }
     });
-    const user = await res.json();
+    const user = await res.text();
+    console.log(res.text());
     return {
       user: user
     };
@@ -1924,7 +1925,7 @@ class Index extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\joshu\Documents\GitHub\next-multify\pages\index.js */"./pages/index.js");
+module.exports = __webpack_require__(/*! /Users/anniexu/next-multify/pages/index.js */"./pages/index.js");
 
 
 /***/ }),

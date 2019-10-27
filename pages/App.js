@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './App.css';
-import img from './plus.svg';
+//import img from './plus.svg';
 import SearchPage from './SearchPage.js';
 //import { relative } from 'path';
 import Playlist from './Playlist';
@@ -34,10 +34,12 @@ import Playlist from './Playlist';
 
 
     render() {
-      
+
 
       return (
-<div>
+      <div>
+  <Playlist addSong={this.addSong} songs={this.state.songs}/>
+  <SearchPage addSong={this.addSong}/>
           </div>
       );
     }
