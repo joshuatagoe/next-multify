@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/index.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static\\development\\pages\\index.js"],{
 
 /***/ "./Events.js":
 /*!*******************!*\
@@ -181,7 +181,7 @@ function (_Component) {
         className: "jsx-3854067381" + " " + "btn btn-primary"
       }, "Log in with Spotify")), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_5___default.a, {
         id: "3854067381"
-      }, "#login.jsx-3854067381,#loggedin.jsx-3854067381{display:none;}.text-overflow.jsx-3854067381{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:500px;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9hbm5pZXh1L25leHQtbXVsdGlmeS9jb21wb25lbnQvTG9naW4uanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBWW9CLEFBRzRCLEFBR0csYUFGbEIsR0FHeUIsdUJBQ0osbUJBQ1AsWUFDZCIsImZpbGUiOiIvVXNlcnMvYW5uaWV4dS9uZXh0LW11bHRpZnkvY29tcG9uZW50L0xvZ2luLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0LCB7IENvbXBvbmVudCB9IGZyb20gJ3JlYWN0JztcbmltcG9ydCBMaW5rIGZyb20gJ25leHQvbGluaydcblxuY2xhc3MgTG9naW4gZXh0ZW5kcyBDb21wb25lbnR7XG5cbiAgICByZW5kZXIoKXtcblxuICAgICAgIHJldHVybiA8ZGl2PlxuICAgICAgICA8aDE+VGhpcyBpcyBhbiBleGFtcGxlIG9mIHRoZSBBdXRob3JpemF0aW9uIENvZGUgZmxvdzwvaDE+XG4gICAgICAgIDxMaW5rIGhyZWY9XCIvbG9naW5cIj5cbiAgICAgICAgPGRpdiAgY2xhc3NOYW1lPVwiYnRuIGJ0bi1wcmltYXJ5XCI+TG9nIGluIHdpdGggU3BvdGlmeTwvZGl2PlxuICAgICAgICA8L0xpbms+XG4gICAgICAgIDxzdHlsZSBqc3g+e2BcbiAgICAgICAgICAgICNsb2dpbiwgI2xvZ2dlZGluIHtcbiAgICAgICAgICAgICAgZGlzcGxheTogbm9uZTtcbiAgICAgICAgICAgIH1cbiAgICAgICAgICAgIC50ZXh0LW92ZXJmbG93IHtcbiAgICAgICAgICAgICAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgICAgICAgICAgICAgdGV4dC1vdmVyZmxvdzogZWxsaXBzaXM7XG4gICAgICAgICAgICAgIHdoaXRlLXNwYWNlOiBub3dyYXA7XG4gICAgICAgICAgICAgIHdpZHRoOiA1MDBweDtcbiAgICAgICAgICAgIH1cbiAgICAgICAgICAgIGB9XG4gICAgICAgIDwvc3R5bGU+XG4gICAgICA8L2Rpdj5cblxuICAgIH1cblxuICAgIFxufVxuXG5leHBvcnQgZGVmYXVsdCBMb2dpbiJdfQ== */\n/*@ sourceURL=/Users/anniexu/next-multify/component/Login.js */"));
+      }, "#login.jsx-3854067381,#loggedin.jsx-3854067381{display:none;}.text-overflow.jsx-3854067381{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:500px;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xcam9zaHVcXERvY3VtZW50c1xcR2l0SHViXFxuZXh0LW11bHRpZnlcXGNvbXBvbmVudFxcTG9naW4uanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBWW9CLEFBRzRCLEFBR0csYUFGbEIsR0FHeUIsdUJBQ0osbUJBQ1AsWUFDZCIsImZpbGUiOiJDOlxcVXNlcnNcXGpvc2h1XFxEb2N1bWVudHNcXEdpdEh1YlxcbmV4dC1tdWx0aWZ5XFxjb21wb25lbnRcXExvZ2luLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0LCB7IENvbXBvbmVudCB9IGZyb20gJ3JlYWN0JztcclxuaW1wb3J0IExpbmsgZnJvbSAnbmV4dC9saW5rJ1xyXG5cclxuY2xhc3MgTG9naW4gZXh0ZW5kcyBDb21wb25lbnR7XHJcblxyXG4gICAgcmVuZGVyKCl7XHJcblxyXG4gICAgICAgcmV0dXJuIDxkaXY+XHJcbiAgICAgICAgPGgxPlRoaXMgaXMgYW4gZXhhbXBsZSBvZiB0aGUgQXV0aG9yaXphdGlvbiBDb2RlIGZsb3c8L2gxPlxyXG4gICAgICAgIDxMaW5rIGhyZWY9XCIvbG9naW5cIj5cclxuICAgICAgICA8ZGl2ICBjbGFzc05hbWU9XCJidG4gYnRuLXByaW1hcnlcIj5Mb2cgaW4gd2l0aCBTcG90aWZ5PC9kaXY+XHJcbiAgICAgICAgPC9MaW5rPlxyXG4gICAgICAgIDxzdHlsZSBqc3g+e2BcclxuICAgICAgICAgICAgI2xvZ2luLCAjbG9nZ2VkaW4ge1xyXG4gICAgICAgICAgICAgIGRpc3BsYXk6IG5vbmU7XHJcbiAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgLnRleHQtb3ZlcmZsb3cge1xyXG4gICAgICAgICAgICAgIG92ZXJmbG93OiBoaWRkZW47XHJcbiAgICAgICAgICAgICAgdGV4dC1vdmVyZmxvdzogZWxsaXBzaXM7XHJcbiAgICAgICAgICAgICAgd2hpdGUtc3BhY2U6IG5vd3JhcDtcclxuICAgICAgICAgICAgICB3aWR0aDogNTAwcHg7XHJcbiAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgYH1cclxuICAgICAgICA8L3N0eWxlPlxyXG4gICAgICA8L2Rpdj5cclxuXHJcbiAgICB9XHJcblxyXG4gICAgXHJcbn1cclxuXHJcbmV4cG9ydCBkZWZhdWx0IExvZ2luIl19 */\n/*@ sourceURL=C:\\Users\\joshu\\Documents\\GitHub\\next-multify\\component\\Login.js */"));
     }
   }]);
 
@@ -349,7 +349,7 @@ function (_Component) {
               case 0:
                 alert('An essay was submitted: ' + this.state.value);
                 event.preventDefault();
-                token = this.props.user;
+                token = this.props.user.user_token;
                 url = 'https://api.spotify.com/v1/search/q=name:' + this.state.value + "&type=track";
                 _context.next = 6;
                 return fetch(url, {
@@ -421,7 +421,7 @@ function (_Component) {
         className: "jsx-1552033435" + " " + 'flexy'
       }, results), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_8___default.a, {
         id: "1552033435"
-      }, ".flexy.jsx-1552033435{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9hbm5pZXh1L25leHQtbXVsdGlmeS9jb21wb25lbnQvU2VhcmNoUGFnZS5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUF5RHNCLEFBSVUsMEVBQUMiLCJmaWxlIjoiL1VzZXJzL2FubmlleHUvbmV4dC1tdWx0aWZ5L2NvbXBvbmVudC9TZWFyY2hQYWdlLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0LCB7Q29tcG9uZW50fSBmcm9tICdyZWFjdCc7XG5cbmNsYXNzIFNlYXJjaFBhZ2UgZXh0ZW5kcyBDb21wb25lbnQge1xuICAgIGNvbnN0cnVjdG9yKHByb3BzKSB7XG4gICAgICAgIHN1cGVyKHByb3BzKTtcbiAgICAgICAgdGhpcy5zdGF0ZSA9IHtcbiAgICAgICAgICB2YWx1ZTogJycsXG4gICAgICAgICAgcmVzdWx0czogW11cbiAgICAgICAgfTtcbiAgICBcbiAgICAgICAgdGhpcy5oYW5kbGVDaGFuZ2UgPSB0aGlzLmhhbmRsZUNoYW5nZS5iaW5kKHRoaXMpO1xuICAgICAgICB0aGlzLmhhbmRsZVN1Ym1pdCA9IHRoaXMuaGFuZGxlU3VibWl0LmJpbmQodGhpcyk7XG4gICAgICB9XG4gICAgXG4gICAgICBoYW5kbGVDaGFuZ2UoZXZlbnQpIHtcbiAgICAgICAgdGhpcy5zZXRTdGF0ZSh7dmFsdWU6IGV2ZW50LnRhcmdldC52YWx1ZX0pO1xuICAgICAgfVxuICAgIFxuICAgICAgYXN5bmMgaGFuZGxlU3VibWl0KGV2ZW50KSB7XG4gICAgICAgIGFsZXJ0KCdBbiBlc3NheSB3YXMgc3VibWl0dGVkOiAnICsgdGhpcy5zdGF0ZS52YWx1ZSk7XG4gICAgICAgIGV2ZW50LnByZXZlbnREZWZhdWx0KCk7XG4gICAgICAgIGxldCB0b2tlbiA9ICB0aGlzLnByb3BzLnVzZXJcbiAgICAgICAgY29uc3QgdXJsID0gJ2h0dHBzOi8vYXBpLnNwb3RpZnkuY29tL3YxL3NlYXJjaC9xPW5hbWU6JyArIHRoaXMuc3RhdGUudmFsdWUgKyBcIiZ0eXBlPXRyYWNrXCJcbiAgICAgICAgbGV0IHJlc3VsdHMgPSBhd2FpdCBmZXRjaCAodXJsLCB7XG4gICAgICAgICAgaGVhZGVyczoge1xuICAgICAgICAgICAgJ0F1dGhvcml6YXRpb24nOiAnQmVhcmVyICcrdG9rZW5cbiAgICAgICAgICB9XG4gICAgICAgIH0pXG4gICAgICAgIGNvbnNvbGUubG9nKHJlc3VsdHMpXG4gICAgICAgIHJlc3VsdHMgPSBhd2FpdCByZXN1bHRzLmpzb24oKVxuICAgICAgICB0aGlzLnNldFN0YXRlKHtyZXN1bHRzIDogcmVzdWx0cy5ib2R5fSlcbiAgICAgIH1cblxuICAgICAgcmVxdWVzdCgpIHtcbiAgICAgICAgICAgICAgICB9XG4gICAgXG4gICAgcmVuZGVyKCkge1xuICAgICAgbGV0IHJlc3VsdHMgPSB0aGlzLnN0YXRlLnJlc3VsdHMubWFwKCh4KT0+e1xuICAgICAgICByZXR1cm4gPGRpdj5cbiAgICAgICAgICB7eH1cbiAgICAgICAgPC9kaXY+XG4gICAgICB9KVxuICAgICAgICByZXR1cm4oXG4gICAgICAgICAgICA8ZGl2PlxuICAgICAgICAgICAgICAgIDxhIGhyZWY9Jy8nPkJhY2s8L2E+XG4gICAgICAgICAgICAgICAgPGJ1dHRvbiBvbkNsaWNrPXt0aGlzLnByb3BzLmFkZFNvbmd9PkFERCBTT05HPC9idXR0b24+XG4gICAgICAgICAgICAgICAgPGgxPnt0aGlzLnByb3BzLmFkZFNvbmd9PC9oMT5cbiAgICAgICAgICAgICAgICA8Zm9ybSBvblN1Ym1pdD17dGhpcy5oYW5kbGVTdWJtaXR9PlxuICAgICAgICA8bGFiZWw+XG4gICAgICAgICAgRXNzYXk6XG4gICAgICAgICAgPHRleHRhcmVhIHZhbHVlPXt0aGlzLnN0YXRlLnZhbHVlfSBvbkNoYW5nZT17dGhpcy5oYW5kbGVDaGFuZ2V9IC8+XG4gICAgICAgIDwvbGFiZWw+XG4gICAgICAgIDxpbnB1dCB0eXBlPVwic3VibWl0XCIgdmFsdWU9XCJTdWJtaXRcIiBvbkNsaWNrPXt0aGlzLmhhbmRsZVN1Ym1pdH0vPlxuICAgICAgPC9mb3JtPlxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSdmbGV4eSc+XG4gICAgICAgICAgICAgIHtyZXN1bHRzfVxuICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgIDxzdHlsZSBqc3g+e2BcbiAgICAgICAgICAuZmxleHkge1xuICAgICAgICAgICAgZGlzcGxheTogZmxleFxuICAgICAgICAgIH1cbiAgICAgICAgICBcbiAgICAgICAgICBcbiAgICAgICAgICBgfTwvc3R5bGU+XG4gICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgKVxuICAgIH1cbn1cblxuXG5cbmV4cG9ydCBkZWZhdWx0IFNlYXJjaFBhZ2U7Il19 */\n/*@ sourceURL=/Users/anniexu/next-multify/component/SearchPage.js */"));
+      }, ".flexy.jsx-1552033435{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xcam9zaHVcXERvY3VtZW50c1xcR2l0SHViXFxuZXh0LW11bHRpZnlcXGNvbXBvbmVudFxcU2VhcmNoUGFnZS5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUF5RHNCLEFBSVUsMEVBQUMiLCJmaWxlIjoiQzpcXFVzZXJzXFxqb3NodVxcRG9jdW1lbnRzXFxHaXRIdWJcXG5leHQtbXVsdGlmeVxcY29tcG9uZW50XFxTZWFyY2hQYWdlLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0LCB7Q29tcG9uZW50fSBmcm9tICdyZWFjdCc7XHJcblxyXG5jbGFzcyBTZWFyY2hQYWdlIGV4dGVuZHMgQ29tcG9uZW50IHtcclxuICAgIGNvbnN0cnVjdG9yKHByb3BzKSB7XHJcbiAgICAgICAgc3VwZXIocHJvcHMpO1xyXG4gICAgICAgIHRoaXMuc3RhdGUgPSB7XHJcbiAgICAgICAgICB2YWx1ZTogJycsXHJcbiAgICAgICAgICByZXN1bHRzOiBbXVxyXG4gICAgICAgIH07XHJcbiAgICBcclxuICAgICAgICB0aGlzLmhhbmRsZUNoYW5nZSA9IHRoaXMuaGFuZGxlQ2hhbmdlLmJpbmQodGhpcyk7XHJcbiAgICAgICAgdGhpcy5oYW5kbGVTdWJtaXQgPSB0aGlzLmhhbmRsZVN1Ym1pdC5iaW5kKHRoaXMpO1xyXG4gICAgICB9XHJcbiAgICBcclxuICAgICAgaGFuZGxlQ2hhbmdlKGV2ZW50KSB7XHJcbiAgICAgICAgdGhpcy5zZXRTdGF0ZSh7dmFsdWU6IGV2ZW50LnRhcmdldC52YWx1ZX0pO1xyXG4gICAgICB9XHJcbiAgICBcclxuICAgICAgYXN5bmMgaGFuZGxlU3VibWl0KGV2ZW50KSB7XHJcbiAgICAgICAgYWxlcnQoJ0FuIGVzc2F5IHdhcyBzdWJtaXR0ZWQ6ICcgKyB0aGlzLnN0YXRlLnZhbHVlKTtcclxuICAgICAgICBldmVudC5wcmV2ZW50RGVmYXVsdCgpO1xyXG4gICAgICAgIGxldCB0b2tlbiA9ICB0aGlzLnByb3BzLnVzZXIudXNlcl90b2tlblxyXG4gICAgICAgIGNvbnN0IHVybCA9ICdodHRwczovL2FwaS5zcG90aWZ5LmNvbS92MS9zZWFyY2gvcT1uYW1lOicgKyB0aGlzLnN0YXRlLnZhbHVlICsgXCImdHlwZT10cmFja1wiXHJcbiAgICAgICAgbGV0IHJlc3VsdHMgPSBhd2FpdCBmZXRjaCAodXJsLCB7XHJcbiAgICAgICAgICBoZWFkZXJzOiB7XHJcbiAgICAgICAgICAgICdBdXRob3JpemF0aW9uJzogJ0JlYXJlciAnK3Rva2VuXHJcbiAgICAgICAgICB9XHJcbiAgICAgICAgfSlcclxuICAgICAgICBjb25zb2xlLmxvZyhyZXN1bHRzKVxyXG4gICAgICAgIHJlc3VsdHMgPSBhd2FpdCByZXN1bHRzLmpzb24oKVxyXG4gICAgICAgIHRoaXMuc2V0U3RhdGUoe3Jlc3VsdHMgOiByZXN1bHRzLmJvZHl9KVxyXG4gICAgICB9XHJcblxyXG4gICAgICByZXF1ZXN0KCkge1xyXG4gICAgICAgICAgICAgICAgfVxyXG4gICAgXHJcbiAgICByZW5kZXIoKSB7XHJcbiAgICAgIGxldCByZXN1bHRzID0gdGhpcy5zdGF0ZS5yZXN1bHRzLm1hcCgoeCk9PntcclxuICAgICAgICByZXR1cm4gPGRpdj5cclxuICAgICAgICAgIHt4fVxyXG4gICAgICAgIDwvZGl2PlxyXG4gICAgICB9KVxyXG4gICAgICAgIHJldHVybihcclxuICAgICAgICAgICAgPGRpdj5cclxuICAgICAgICAgICAgICAgIDxhIGhyZWY9Jy8nPkJhY2s8L2E+XHJcbiAgICAgICAgICAgICAgICA8YnV0dG9uIG9uQ2xpY2s9e3RoaXMucHJvcHMuYWRkU29uZ30+QUREIFNPTkc8L2J1dHRvbj5cclxuICAgICAgICAgICAgICAgIDxoMT57dGhpcy5wcm9wcy5hZGRTb25nfTwvaDE+XHJcbiAgICAgICAgICAgICAgICA8Zm9ybSBvblN1Ym1pdD17dGhpcy5oYW5kbGVTdWJtaXR9PlxyXG4gICAgICAgIDxsYWJlbD5cclxuICAgICAgICAgIEVzc2F5OlxyXG4gICAgICAgICAgPHRleHRhcmVhIHZhbHVlPXt0aGlzLnN0YXRlLnZhbHVlfSBvbkNoYW5nZT17dGhpcy5oYW5kbGVDaGFuZ2V9IC8+XHJcbiAgICAgICAgPC9sYWJlbD5cclxuICAgICAgICA8aW5wdXQgdHlwZT1cInN1Ym1pdFwiIHZhbHVlPVwiU3VibWl0XCIgb25DbGljaz17dGhpcy5oYW5kbGVTdWJtaXR9Lz5cclxuICAgICAgPC9mb3JtPlxyXG4gICAgICAgICAgPGRpdiBjbGFzc05hbWU9J2ZsZXh5Jz5cclxuICAgICAgICAgICAgICB7cmVzdWx0c31cclxuICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgICAgPHN0eWxlIGpzeD57YFxyXG4gICAgICAgICAgLmZsZXh5IHtcclxuICAgICAgICAgICAgZGlzcGxheTogZmxleFxyXG4gICAgICAgICAgfVxyXG4gICAgICAgICAgXHJcbiAgICAgICAgICBcclxuICAgICAgICAgIGB9PC9zdHlsZT5cclxuICAgICAgICAgICAgPC9kaXY+XHJcbiAgICAgICAgKVxyXG4gICAgfVxyXG59XHJcblxyXG5cclxuXHJcbmV4cG9ydCBkZWZhdWx0IFNlYXJjaFBhZ2U7Il19 */\n/*@ sourceURL=C:\\Users\\joshu\\Documents\\GitHub\\next-multify\\component\\SearchPage.js */"));
     }
   }]);
 
@@ -10392,7 +10392,7 @@ if (typeof WebSocket !== 'undefined') {
 
 if (typeof window === 'undefined') {
   try {
-    NodeWebSocket = __webpack_require__(/*! ws */ 1);
+    NodeWebSocket = __webpack_require__(/*! ws */ 2);
   } catch (e) { }
 }
 
@@ -12348,10 +12348,10 @@ function plural(ms, msAbs, n, name) {
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fanniexu%2Fnext-multify%2Fpages%2Findex.js!./":
-/*!*****************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fanniexu%2Fnext-multify%2Fpages%2Findex.js ***!
-  \*****************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=C%3A%5CUsers%5Cjoshu%5CDocuments%5CGitHub%5Cnext-multify%5Cpages%5Cindex.js!./":
+/*!****************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=C%3A%5CUsers%5Cjoshu%5CDocuments%5CGitHub%5Cnext-multify%5Cpages%5Cindex.js ***!
+  \****************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15097,12 +15097,12 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 
 /***/ "./node_modules/object-assign/index.js":
 /*!***************************************************************************************************!*\
-  !*** delegated ./node_modules/object-assign/index.js from dll-reference dll_e9ad7d891b372a4221cf ***!
+  !*** delegated ./node_modules/object-assign/index.js from dll-reference dll_ea92a4d9664833a26066 ***!
   \***************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_e9ad7d891b372a4221cf */ "dll-reference dll_e9ad7d891b372a4221cf"))("./node_modules/object-assign/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_ea92a4d9664833a26066 */ "dll-reference dll_ea92a4d9664833a26066"))("./node_modules/object-assign/index.js");
 
 /***/ }),
 
@@ -15868,12 +15868,12 @@ module.exports = exports['default'];
 
 /***/ "./node_modules/prop-types/checkPropTypes.js":
 /*!*********************************************************************************************************!*\
-  !*** delegated ./node_modules/prop-types/checkPropTypes.js from dll-reference dll_e9ad7d891b372a4221cf ***!
+  !*** delegated ./node_modules/prop-types/checkPropTypes.js from dll-reference dll_ea92a4d9664833a26066 ***!
   \*********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_e9ad7d891b372a4221cf */ "dll-reference dll_e9ad7d891b372a4221cf"))("./node_modules/prop-types/checkPropTypes.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_ea92a4d9664833a26066 */ "dll-reference dll_ea92a4d9664833a26066"))("./node_modules/prop-types/checkPropTypes.js");
 
 /***/ }),
 
@@ -16508,12 +16508,12 @@ if (true) {
 
 /***/ "./node_modules/prop-types/lib/ReactPropTypesSecret.js":
 /*!*******************************************************************************************************************!*\
-  !*** delegated ./node_modules/prop-types/lib/ReactPropTypesSecret.js from dll-reference dll_e9ad7d891b372a4221cf ***!
+  !*** delegated ./node_modules/prop-types/lib/ReactPropTypesSecret.js from dll-reference dll_ea92a4d9664833a26066 ***!
   \*******************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_e9ad7d891b372a4221cf */ "dll-reference dll_e9ad7d891b372a4221cf"))("./node_modules/prop-types/lib/ReactPropTypesSecret.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_ea92a4d9664833a26066 */ "dll-reference dll_ea92a4d9664833a26066"))("./node_modules/prop-types/lib/ReactPropTypesSecret.js");
 
 /***/ }),
 
@@ -16984,12 +16984,12 @@ if (false) {} else {
 
 /***/ "./node_modules/react/index.js":
 /*!*******************************************************************************************!*\
-  !*** delegated ./node_modules/react/index.js from dll-reference dll_e9ad7d891b372a4221cf ***!
+  !*** delegated ./node_modules/react/index.js from dll-reference dll_ea92a4d9664833a26066 ***!
   \*******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_e9ad7d891b372a4221cf */ "dll-reference dll_e9ad7d891b372a4221cf"))("./node_modules/react/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_ea92a4d9664833a26066 */ "dll-reference dll_ea92a4d9664833a26066"))("./node_modules/react/index.js");
 
 /***/ }),
 
@@ -22167,9 +22167,7 @@ function (_React$Component) {
   Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__["default"])(Index, [{
     key: "enter",
     value: function enter(evt) {
-      evt.preventDefault(); //const { socket } = this.props
-      //io.emit(VERIFY_USER, this.props.user)
-
+      evt.preventDefault();
       this.setState({
         inRoom: true
       });
@@ -22188,7 +22186,7 @@ function (_React$Component) {
       }) : __jsx("div", null, __jsx(next_head__WEBPACK_IMPORTED_MODULE_10___default.a, null, __jsx("title", null, "Example of the Authorization Code flow with Spotify"), __jsx("link", {
         rel: "stylesheet",
         href: "//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"
-      })), this.props.user ? Button : __jsx(_component_Login__WEBPACK_IMPORTED_MODULE_9__["default"], null)));
+      })), this.props.user.user_token ? Button : __jsx(_component_Login__WEBPACK_IMPORTED_MODULE_9__["default"], null)));
     }
   }], [{
     key: "getInitialProps",
@@ -22202,17 +22200,21 @@ function (_React$Component) {
             switch (_context.prev = _context.next) {
               case 0:
                 _context.next = 2;
-                return isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_11___default()('http://localhost:3000/getUser');
+                return isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_11___default()('http://localhost:3000/getUser', {
+                  headers: {
+                    cookie: ctx.req.headers.cookie
+                  }
+                });
 
               case 2:
                 res = _context.sent;
                 _context.next = 5;
-                return res.text();
+                return res.json();
 
               case 5:
                 user = _context.sent;
                 return _context.abrupt("return", {
-                  user: user.user
+                  user: user
                 });
 
               case 7:
@@ -22238,19 +22240,19 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ 0:
-/*!*********************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fanniexu%2Fnext-multify%2Fpages%2Findex.js ***!
-  \*********************************************************************************************************************/
+/***/ 1:
+/*!********************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=C%3A%5CUsers%5Cjoshu%5CDocuments%5CGitHub%5Cnext-multify%5Cpages%5Cindex.js ***!
+  \********************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fanniexu%2Fnext-multify%2Fpages%2Findex.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fanniexu%2Fnext-multify%2Fpages%2Findex.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=C%3A%5CUsers%5Cjoshu%5CDocuments%5CGitHub%5Cnext-multify%5Cpages%5Cindex.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=C%3A%5CUsers%5Cjoshu%5CDocuments%5CGitHub%5Cnext-multify%5Cpages%5Cindex.js!./");
 
 
 /***/ }),
 
-/***/ 1:
+/***/ 2:
 /*!********************!*\
   !*** ws (ignored) ***!
   \********************/
@@ -22261,16 +22263,16 @@ module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absol
 
 /***/ }),
 
-/***/ "dll-reference dll_e9ad7d891b372a4221cf":
+/***/ "dll-reference dll_ea92a4d9664833a26066":
 /*!*******************************************!*\
-  !*** external "dll_e9ad7d891b372a4221cf" ***!
+  !*** external "dll_ea92a4d9664833a26066" ***!
   \*******************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = dll_e9ad7d891b372a4221cf;
+module.exports = dll_ea92a4d9664833a26066;
 
 /***/ })
 
-},[[0,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map

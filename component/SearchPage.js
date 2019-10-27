@@ -19,8 +19,8 @@ class SearchPage extends Component {
       async handleSubmit(event) {
         alert('An essay was submitted: ' + this.state.value);
         event.preventDefault();
-        let token =  this.props.user
-        const url = 'https://api.spotify.com/v1/search/q=name:' + this.state.value + "&type=track"
+        let token =  this.props.user.user_token
+        const url = 'https://api.spotify.com/v1/search?q=' + this.state.value + "&type=track"
         let results = await fetch (url, {
           headers: {
             'Authorization': 'Bearer '+token

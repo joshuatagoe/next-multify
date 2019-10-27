@@ -119,22 +119,15 @@ var generateRandomString = function(length) {
                 json: true
               };
               req.session.user_token = body.access_token
-              user = body.access_token
               req.session.save()
       
               // use the access token to access the Spotify Web API
-              request.get(options, function(error, response, body) {
-                console.log("test3")
-                res.redirect('/')   
-               
-              });
-      
-              // we can also pass the token to the browser to make requests from there
-             /* res.redirect('/#' +
+
+             res.redirect('/#' +
                 querystring.stringify({
                   access_token: access_token,
                   refresh_token: refresh_token
-                }));*/
+                }));
             } else {
               res.redirect('/#' +
                 querystring.stringify({
@@ -175,17 +168,17 @@ var generateRandomString = function(length) {
       console.log("Sessiion Data")
       console.log(req.session)
       if(!req.session.user_token){
-        console.log(req.session.test + req.session.eggs)
         res.send({ user : null})
       }
       else{
 
-        res.send({user : req.session.user})
+        res.send({user_token : req.session.user_token})
       }
 
     })
 
     app.get('*', (req,res) => {
+        req.session.save()
         return handle(req,res) // for all the react stuff
     })
 
