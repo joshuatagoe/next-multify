@@ -1,6 +1,5 @@
 import React from 'react';
 import Login from '../component/Login'
-import App from '../component/App'
 import Head from 'next/head';
 import fetch from 'isomorphic-unfetch'
 import { VERIFY_USER } from '../Events'
@@ -41,7 +40,7 @@ export default class Index extends React.Component {
     </div>
     return (
       <>
-      { this.state.inRoom ? <App user={this.props.user}/> : (<div>
+      { this.state.inRoom ? "egg" : (<div>
         <Head>
         <title>Example of the Authorization Code flow with Spotify</title>
         <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"/>

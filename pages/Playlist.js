@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Song from './Song';
+import Song from '../component/Song';
 import img from './plus.svg';
 
 

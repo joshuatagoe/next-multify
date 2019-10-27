@@ -1,6 +1,4 @@
 import React, {Component} from 'react';
-import TriangleU from './Assets/triangleu.png';
-import TriangleD from './Assets/triangled.png';
 
 
 export default class Song extends Component {
@@ -97,8 +95,8 @@ export default class Song extends Component {
                 <h1 style={styles.h1}>{this.props.rank}</h1>
                 <h2 style={styles.h2}>{this.props.name}</h2>
                 <p style={styles.p}>{this.props.artist}</p>
-                <button style={styles.button1} onClick={this.votedown}><img src={TriangleD} alt='triangle down' style={styles.imagedown}/></button>
-                <button style={styles.button2} onClick={this.voteup}><img src={TriangleU} alt='triangle up' style={styles.imageup}/></button>
+                <button style={styles.button1} onClick={this.votedown}><img src="" alt='triangle down' style={styles.imagedown}/></button>
+                <button style={styles.button2} onClick={this.voteup}><img src="" alt='triangle up' style={styles.imageup}/></button>
            
             </div>
         )

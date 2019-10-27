@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import './App.css';
-import { BrowserRouter, Switch, Route, Link} from 'react-router-dom';
 import img from './plus.svg';
 import SearchPage from './SearchPage.js';
 //import { relative } from 'path';
@@ -38,19 +37,8 @@ import Playlist from './Playlist';
       
 
       return (
-        <BrowserRouter>
-          <div>
-            <Switch>
-            <Route exact path='/'>
-                <Playlist  addSong={this.addSong} songs={this.state.songs} />
-                
-              </Route>
-              <Route exact path='/search'>
-                <SearchPage addSong={this.addSong} />
-              </Route>
-            </Switch>
+<div>
           </div>
-        </BrowserRouter>
       );
     }
   }

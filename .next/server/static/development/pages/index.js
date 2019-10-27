@@ -93,6 +93,29 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
+/***/ "./Events.js":
+/*!*******************!*\
+  !*** ./Events.js ***!
+  \*******************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = {
+  USER_CONNECTED: "USER_CONNECTED",
+  SONG_RECEIVED: "SONG_RECEIVED",
+  SONG_SENT: "SONG_SENT",
+  SONG_ENDS: "SONG_ENDS",
+  SONG_PLAYS: "SONG_PLAYS",
+  USER_DISCONNECTED: "USER_DISCONNECTED",
+  VOTEUP: "VOTEUP",
+  VOTEDOWN: "VOTEDOWN",
+  VERIFY_USER: "VERIFY_USER",
+  VOTEDOWN: "VOTEDOWN",
+  LOGOUT: "LOGOUT"
+};
+
+/***/ }),
+
 /***/ "./component/Login.js":
 /*!****************************!*\
   !*** ./component/Login.js ***!
@@ -1839,12 +1862,25 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! isomorphic-unfetch */ "isomorphic-unfetch");
 /* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _Events__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../Events */ "./Events.js");
+/* harmony import */ var _Events__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_Events__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var socket_io_client__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! socket.io-client */ "socket.io-client");
+/* harmony import */ var socket_io_client__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(socket_io_client__WEBPACK_IMPORTED_MODULE_5__);
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
 
+
+
 class Index extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      inRoom: false
+    };
+  }
+
   static async getInitialProps(ctx) {
     const res = await isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3___default()('http://localhost:3000/getUser', {
       headers: {
@@ -1859,19 +1895,22 @@ class Index extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
 
   enter(evt) {
     evt.preventDefault();
+    const {
+      socket
+    } = this.props;
+    socket_io_client__WEBPACK_IMPORTED_MODULE_5___default.a.emit(_Events__WEBPACK_IMPORTED_MODULE_4__["VERIFY_USER"], this.props.user);
+    inRoom = true;
   }
 
   render() {
-    console.log(this.props);
-
     const Button = __jsx("div", {
       onClick: this.enter
     }, "Enter Room");
 
-    return __jsx("div", null, __jsx(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, null, __jsx("title", null, "Example of the Authorization Code flow with Spotify"), __jsx("link", {
+    return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, this.state.inRoom ? "egg" : __jsx("div", null, __jsx(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, null, __jsx("title", null, "Example of the Authorization Code flow with Spotify"), __jsx("link", {
       rel: "stylesheet",
       href: "//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"
-    })), this.props.user ? Button : __jsx(_component_Login__WEBPACK_IMPORTED_MODULE_1__["default"], null));
+    })), this.props.user ? Button : __jsx(_component_Login__WEBPACK_IMPORTED_MODULE_1__["default"], null)));
   }
 
 }
@@ -2030,6 +2069,17 @@ module.exports = require("react");
 /***/ (function(module, exports) {
 
 module.exports = require("react-is");
+
+/***/ }),
+
+/***/ "socket.io-client":
+/*!***********************************!*\
+  !*** external "socket.io-client" ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("socket.io-client");
 
 /***/ }),
 

@@ -13,7 +13,7 @@ var app = express();
 var http = require('http')
 var server = http.createServer(app);
 var session = require('express-session')
-const io = require('socket-io')(server)
+const io = require('socket.io')(server)
 
 
 

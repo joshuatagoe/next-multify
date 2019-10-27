@@ -50,10 +50,11 @@ module.exports = function(socket){
     socket.on(VOTEUP, (song)=>{
         if (!song.upvotes){
             song.upvotes = 1;
+        }
             else {
                 song.upvotes += 1
             }
-        }
+        
     })
 
         //User disconencts
