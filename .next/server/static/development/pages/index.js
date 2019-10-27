@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -327,16 +327,19 @@ class SearchPage extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
     alert('An essay was submitted: ' + this.state.value);
     event.preventDefault();
     let token = this.props.user.user_token;
-    const url = 'https://api.spotify.com/v1/search/q=name:' + this.state.value + "&type=track";
-    let results = await fetch(url, {
+    const url = 'https://api.spotify.com/v1/search?q=' + this.state.value + "&type=track";
+    let data = await fetch(url, {
       headers: {
         'Authorization': 'Bearer ' + token
       }
     });
-    console.log(results);
-    results = await results.json();
+    data = await data.json();
+    let newarr = [];
+    data.tracks.items.map(x => {
+      newarr.push(x);
+    });
     this.setState({
-      results: results.body
+      results: newarr
     });
   }
 
@@ -374,7 +377,7 @@ class SearchPage extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
       className: "jsx-1552033435" + " " + 'flexy'
     }, results), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
       id: "1552033435"
-    }, ".flexy.jsx-1552033435{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xcam9zaHVcXERvY3VtZW50c1xcR2l0SHViXFxuZXh0LW11bHRpZnlcXGNvbXBvbmVudFxcU2VhcmNoUGFnZS5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUF5RHNCLEFBSVUsMEVBQUMiLCJmaWxlIjoiQzpcXFVzZXJzXFxqb3NodVxcRG9jdW1lbnRzXFxHaXRIdWJcXG5leHQtbXVsdGlmeVxcY29tcG9uZW50XFxTZWFyY2hQYWdlLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0LCB7Q29tcG9uZW50fSBmcm9tICdyZWFjdCc7XHJcblxyXG5jbGFzcyBTZWFyY2hQYWdlIGV4dGVuZHMgQ29tcG9uZW50IHtcclxuICAgIGNvbnN0cnVjdG9yKHByb3BzKSB7XHJcbiAgICAgICAgc3VwZXIocHJvcHMpO1xyXG4gICAgICAgIHRoaXMuc3RhdGUgPSB7XHJcbiAgICAgICAgICB2YWx1ZTogJycsXHJcbiAgICAgICAgICByZXN1bHRzOiBbXVxyXG4gICAgICAgIH07XHJcbiAgICBcclxuICAgICAgICB0aGlzLmhhbmRsZUNoYW5nZSA9IHRoaXMuaGFuZGxlQ2hhbmdlLmJpbmQodGhpcyk7XHJcbiAgICAgICAgdGhpcy5oYW5kbGVTdWJtaXQgPSB0aGlzLmhhbmRsZVN1Ym1pdC5iaW5kKHRoaXMpO1xyXG4gICAgICB9XHJcbiAgICBcclxuICAgICAgaGFuZGxlQ2hhbmdlKGV2ZW50KSB7XHJcbiAgICAgICAgdGhpcy5zZXRTdGF0ZSh7dmFsdWU6IGV2ZW50LnRhcmdldC52YWx1ZX0pO1xyXG4gICAgICB9XHJcbiAgICBcclxuICAgICAgYXN5bmMgaGFuZGxlU3VibWl0KGV2ZW50KSB7XHJcbiAgICAgICAgYWxlcnQoJ0FuIGVzc2F5IHdhcyBzdWJtaXR0ZWQ6ICcgKyB0aGlzLnN0YXRlLnZhbHVlKTtcclxuICAgICAgICBldmVudC5wcmV2ZW50RGVmYXVsdCgpO1xyXG4gICAgICAgIGxldCB0b2tlbiA9ICB0aGlzLnByb3BzLnVzZXIudXNlcl90b2tlblxyXG4gICAgICAgIGNvbnN0IHVybCA9ICdodHRwczovL2FwaS5zcG90aWZ5LmNvbS92MS9zZWFyY2gvcT1uYW1lOicgKyB0aGlzLnN0YXRlLnZhbHVlICsgXCImdHlwZT10cmFja1wiXHJcbiAgICAgICAgbGV0IHJlc3VsdHMgPSBhd2FpdCBmZXRjaCAodXJsLCB7XHJcbiAgICAgICAgICBoZWFkZXJzOiB7XHJcbiAgICAgICAgICAgICdBdXRob3JpemF0aW9uJzogJ0JlYXJlciAnK3Rva2VuXHJcbiAgICAgICAgICB9XHJcbiAgICAgICAgfSlcclxuICAgICAgICBjb25zb2xlLmxvZyhyZXN1bHRzKVxyXG4gICAgICAgIHJlc3VsdHMgPSBhd2FpdCByZXN1bHRzLmpzb24oKVxyXG4gICAgICAgIHRoaXMuc2V0U3RhdGUoe3Jlc3VsdHMgOiByZXN1bHRzLmJvZHl9KVxyXG4gICAgICB9XHJcblxyXG4gICAgICByZXF1ZXN0KCkge1xyXG4gICAgICAgICAgICAgICAgfVxyXG4gICAgXHJcbiAgICByZW5kZXIoKSB7XHJcbiAgICAgIGxldCByZXN1bHRzID0gdGhpcy5zdGF0ZS5yZXN1bHRzLm1hcCgoeCk9PntcclxuICAgICAgICByZXR1cm4gPGRpdj5cclxuICAgICAgICAgIHt4fVxyXG4gICAgICAgIDwvZGl2PlxyXG4gICAgICB9KVxyXG4gICAgICAgIHJldHVybihcclxuICAgICAgICAgICAgPGRpdj5cclxuICAgICAgICAgICAgICAgIDxhIGhyZWY9Jy8nPkJhY2s8L2E+XHJcbiAgICAgICAgICAgICAgICA8YnV0dG9uIG9uQ2xpY2s9e3RoaXMucHJvcHMuYWRkU29uZ30+QUREIFNPTkc8L2J1dHRvbj5cclxuICAgICAgICAgICAgICAgIDxoMT57dGhpcy5wcm9wcy5hZGRTb25nfTwvaDE+XHJcbiAgICAgICAgICAgICAgICA8Zm9ybSBvblN1Ym1pdD17dGhpcy5oYW5kbGVTdWJtaXR9PlxyXG4gICAgICAgIDxsYWJlbD5cclxuICAgICAgICAgIEVzc2F5OlxyXG4gICAgICAgICAgPHRleHRhcmVhIHZhbHVlPXt0aGlzLnN0YXRlLnZhbHVlfSBvbkNoYW5nZT17dGhpcy5oYW5kbGVDaGFuZ2V9IC8+XHJcbiAgICAgICAgPC9sYWJlbD5cclxuICAgICAgICA8aW5wdXQgdHlwZT1cInN1Ym1pdFwiIHZhbHVlPVwiU3VibWl0XCIgb25DbGljaz17dGhpcy5oYW5kbGVTdWJtaXR9Lz5cclxuICAgICAgPC9mb3JtPlxyXG4gICAgICAgICAgPGRpdiBjbGFzc05hbWU9J2ZsZXh5Jz5cclxuICAgICAgICAgICAgICB7cmVzdWx0c31cclxuICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgICAgPHN0eWxlIGpzeD57YFxyXG4gICAgICAgICAgLmZsZXh5IHtcclxuICAgICAgICAgICAgZGlzcGxheTogZmxleFxyXG4gICAgICAgICAgfVxyXG4gICAgICAgICAgXHJcbiAgICAgICAgICBcclxuICAgICAgICAgIGB9PC9zdHlsZT5cclxuICAgICAgICAgICAgPC9kaXY+XHJcbiAgICAgICAgKVxyXG4gICAgfVxyXG59XHJcblxyXG5cclxuXHJcbmV4cG9ydCBkZWZhdWx0IFNlYXJjaFBhZ2U7Il19 */\n/*@ sourceURL=C:\\Users\\joshu\\Documents\\GitHub\\next-multify\\component\\SearchPage.js */"));
+    }, ".flexy.jsx-1552033435{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xcam9zaHVcXERvY3VtZW50c1xcR2l0SHViXFxuZXh0LW11bHRpZnlcXGNvbXBvbmVudFxcU2VhcmNoUGFnZS5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUE2RHNCLEFBSVUsMEVBQUMiLCJmaWxlIjoiQzpcXFVzZXJzXFxqb3NodVxcRG9jdW1lbnRzXFxHaXRIdWJcXG5leHQtbXVsdGlmeVxcY29tcG9uZW50XFxTZWFyY2hQYWdlLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0LCB7Q29tcG9uZW50fSBmcm9tICdyZWFjdCc7XHJcblxyXG5jbGFzcyBTZWFyY2hQYWdlIGV4dGVuZHMgQ29tcG9uZW50IHtcclxuICAgIGNvbnN0cnVjdG9yKHByb3BzKSB7XHJcbiAgICAgICAgc3VwZXIocHJvcHMpO1xyXG4gICAgICAgIHRoaXMuc3RhdGUgPSB7XHJcbiAgICAgICAgICB2YWx1ZTogJycsXHJcbiAgICAgICAgICByZXN1bHRzOiBbXVxyXG4gICAgICAgIH07XHJcbiAgICBcclxuICAgICAgICB0aGlzLmhhbmRsZUNoYW5nZSA9IHRoaXMuaGFuZGxlQ2hhbmdlLmJpbmQodGhpcyk7XHJcbiAgICAgICAgdGhpcy5oYW5kbGVTdWJtaXQgPSB0aGlzLmhhbmRsZVN1Ym1pdC5iaW5kKHRoaXMpO1xyXG4gICAgICB9XHJcbiAgICBcclxuICAgICAgaGFuZGxlQ2hhbmdlKGV2ZW50KSB7XHJcbiAgICAgICAgdGhpcy5zZXRTdGF0ZSh7dmFsdWU6IGV2ZW50LnRhcmdldC52YWx1ZX0pO1xyXG4gICAgICB9XHJcbiAgICBcclxuICAgICAgYXN5bmMgaGFuZGxlU3VibWl0KGV2ZW50KSB7XHJcbiAgICAgICAgYWxlcnQoJ0FuIGVzc2F5IHdhcyBzdWJtaXR0ZWQ6ICcgKyB0aGlzLnN0YXRlLnZhbHVlKTtcclxuICAgICAgICBldmVudC5wcmV2ZW50RGVmYXVsdCgpO1xyXG4gICAgICAgIGxldCB0b2tlbiA9ICB0aGlzLnByb3BzLnVzZXIudXNlcl90b2tlblxyXG4gICAgICAgIGNvbnN0IHVybCA9ICdodHRwczovL2FwaS5zcG90aWZ5LmNvbS92MS9zZWFyY2g/cT0nICsgdGhpcy5zdGF0ZS52YWx1ZSArIFwiJnR5cGU9dHJhY2tcIlxyXG4gICAgICAgIGxldCBkYXRhID0gYXdhaXQgZmV0Y2ggKHVybCwge1xyXG4gICAgICAgICAgaGVhZGVyczoge1xyXG4gICAgICAgICAgICAnQXV0aG9yaXphdGlvbic6ICdCZWFyZXIgJyt0b2tlblxyXG4gICAgICAgICAgfVxyXG4gICAgICAgIH0pXHJcbiAgICAgICAgZGF0YSA9IGF3YWl0IGRhdGEuanNvbigpXHJcbiAgICAgICAgbGV0IG5ld2FyciA9IFtdXHJcbiAgICAgICAgZGF0YS50cmFja3MuaXRlbXMubWFwKCh4KT0+e1xyXG4gICAgICAgICAgbmV3YXJyLnB1c2goeClcclxuICAgICAgICB9KVxyXG5cclxuICAgICAgICB0aGlzLnNldFN0YXRlKHtyZXN1bHRzIDogbmV3YXJyfSlcclxuICAgICAgfVxyXG5cclxuICAgICAgcmVxdWVzdCgpIHtcclxuICAgICAgICAgICAgICAgIH1cclxuICAgIFxyXG4gICAgcmVuZGVyKCkge1xyXG4gICAgICBsZXQgcmVzdWx0cyA9IHRoaXMuc3RhdGUucmVzdWx0cy5tYXAoKHgpPT57XHJcbiAgICAgICAgcmV0dXJuIDxkaXY+XHJcbiAgICAgICAgICB7eH1cclxuICAgICAgICA8L2Rpdj5cclxuICAgICAgfSlcclxuICAgICAgICByZXR1cm4oXHJcbiAgICAgICAgICAgIDxkaXY+XHJcbiAgICAgICAgICAgICAgICA8YSBocmVmPScvJz5CYWNrPC9hPlxyXG4gICAgICAgICAgICAgICAgPGJ1dHRvbiBvbkNsaWNrPXt0aGlzLnByb3BzLmFkZFNvbmd9PkFERCBTT05HPC9idXR0b24+XHJcbiAgICAgICAgICAgICAgICA8aDE+e3RoaXMucHJvcHMuYWRkU29uZ308L2gxPlxyXG4gICAgICAgICAgICAgICAgPGZvcm0gb25TdWJtaXQ9e3RoaXMuaGFuZGxlU3VibWl0fT5cclxuICAgICAgICA8bGFiZWw+XHJcbiAgICAgICAgICBFc3NheTpcclxuICAgICAgICAgIDx0ZXh0YXJlYSB2YWx1ZT17dGhpcy5zdGF0ZS52YWx1ZX0gb25DaGFuZ2U9e3RoaXMuaGFuZGxlQ2hhbmdlfSAvPlxyXG4gICAgICAgIDwvbGFiZWw+XHJcbiAgICAgICAgPGlucHV0IHR5cGU9XCJzdWJtaXRcIiB2YWx1ZT1cIlN1Ym1pdFwiIG9uQ2xpY2s9e3RoaXMuaGFuZGxlU3VibWl0fS8+XHJcbiAgICAgIDwvZm9ybT5cclxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSdmbGV4eSc+XHJcbiAgICAgICAgICAgICAge3Jlc3VsdHN9XHJcbiAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICAgIDxzdHlsZSBqc3g+e2BcclxuICAgICAgICAgIC5mbGV4eSB7XHJcbiAgICAgICAgICAgIGRpc3BsYXk6IGZsZXhcclxuICAgICAgICAgIH1cclxuICAgICAgICAgIFxyXG4gICAgICAgICAgXHJcbiAgICAgICAgICBgfTwvc3R5bGU+XHJcbiAgICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgIClcclxuICAgIH1cclxufVxyXG5cclxuXHJcblxyXG5leHBvcnQgZGVmYXVsdCBTZWFyY2hQYWdlOyJdfQ== */\n/*@ sourceURL=C:\\Users\\joshu\\Documents\\GitHub\\next-multify\\component\\SearchPage.js */"));
   }
 
 }
@@ -2278,7 +2281,7 @@ class Index extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/

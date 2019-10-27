@@ -21,14 +21,18 @@ class SearchPage extends Component {
         event.preventDefault();
         let token =  this.props.user.user_token
         const url = 'https://api.spotify.com/v1/search?q=' + this.state.value + "&type=track"
-        let results = await fetch (url, {
+        let data = await fetch (url, {
           headers: {
             'Authorization': 'Bearer '+token
           }
         })
-        console.log(results)
-        results = await results.json()
-        this.setState({results : results.body})
+        data = await data.json()
+        let newarr = []
+        data.tracks.items.map((x)=>{
+          newarr.push(x)
+        })
+
+        this.setState({results : newarr})
       }
 
       request() {
